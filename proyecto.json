@@ -1,0 +1,302 @@
+{
+    "info": {
+        "_postman_id": "00a0e198-4895-3af5-3cd7-f4a4d300b0bd",
+        "name": "proyecto",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "copia Crear User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"user\": {\n\t  \"nickname\": \"perro\",\n      \"password\": \"1010010\",\n      \"picture\" :  \"perro.jpg\"\n  } \n}"
+                },
+                "url": "http://localhost:3000/users",
+                "description": "Traer todos los usuarios"
+            },
+            "response": []
+        },
+        {
+            "name": "Copia All user",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/users",
+                "description": "traer todos los usuarios"
+            },
+            "response": []
+        },
+        {
+            "name": "Traer user por Id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/users/5ebb5ca0eaaf8420b803f16f/lists",
+                "description": "traer un solo usuario por id"
+            },
+            "response": []
+        },
+        {
+            "name": "Traer Artistas",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/artists/"
+            },
+            "response": []
+        },
+        {
+            "name": "TraerArtista por Id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/artists/5ebb6a565e59e4259cee2cd1"
+            },
+            "response": []
+        },
+        {
+            "name": "CearArtista",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"artist\": {\n\t   \t\"name1\": \"CAMILO\",\n\t\t\"name2\": \"CAMILO\",\n\t\t\"last_name1\": \"SEXTO\",\n\t\t\"last_name2\": \"ESPAÑA\"\n\t}\n}"
+                },
+                "url": "http://localhost:3000/artists"
+            },
+            "response": []
+        },
+        {
+            "name": "Actualizar un User",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"user\": {\n            \"password\": \"777777\",\n            \"picture\": \"chakira@125.jpg\"\n        }\n}"
+                },
+                "url": "http://localhost:3000/users/5ebac15cc5df462f38728cdb"
+            },
+            "response": []
+        },
+        {
+            "name": "Borra un user",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/users/5ebb5cbeeaaf8420b803f170"
+            },
+            "response": []
+        },
+        {
+            "name": "Crear Lista a User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"list\": {\n\t\t\"name\":  \"los giantes\",\n\t\t\"descripcion\": \"La misuca de Valledupar\",\n\t\t\"gender\": \"vallenatos\"\n\t}\n}"
+                },
+                "url": "http://localhost:3000/users/5ebb5ca0eaaf8420b803f16f/lists"
+            },
+            "response": []
+        },
+        {
+            "name": "Crear Canciones",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"songs\": {\n\t\t\"name\":  \"Volvamos\",\n\t\t\"duraction\": \"5\"\n\t}\n}"
+                },
+                "url": "http://localhost:3000/songs"
+            },
+            "response": []
+        },
+        {
+            "name": "Traer Canciones por Id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/songs/5ecd85113fa9a72404d12af5"
+            },
+            "response": []
+        },
+        {
+            "name": "Traer Todas Las Canciones",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/songs"
+            },
+            "response": []
+        },
+        {
+            "name": "Traer Todas las Listas",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/lists/"
+            },
+            "response": []
+        },
+        {
+            "name": "Asiganar Artista a Canciones",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/artists/5ebb679f5e59e4259cee2cd0/songs/5ecd83541adcf607403352f9/"
+            },
+            "response": []
+        },
+        {
+            "name": "Agregar Canciones a Lista",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/lists/5ecd1d045c931f243cb0f422/songs/5ecd84e83fa9a72404d12af4/"
+            },
+            "response": []
+        },
+        {
+            "name": "Crear Artista",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"artist\": {\n\t   \t\"name1\": \"RAFAEL\",\n\t\t\"name2\": \"SANTOS\",\n\t\t\"last_name1\": \"DIAZ\",\n\t\t\"last_name2\": \"MAESTRE\"\n\t}\n}"
+                },
+                "url": "http://localhost:3000/artists"
+            },
+            "response": []
+        },
+        {
+            "name": "Crear Usuarios",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"user\": {\n\t  \"nickname\": \"perro\",\n      \"password\": \"1010010\",\n      \"picture\" :  \"perro.jpg\"\n  } \n}"
+                },
+                "url": "http://localhost:3000/users",
+                "description": "Traer todos los usuarios"
+            },
+            "response": []
+        },
+        {
+            "name": "Insertar Usuarios",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"user\": {\n\t  \"nickname\": \"perro\",\n      \"password\": \"1010010\",\n      \"picture\" :  \"perro.jpg\"\n  } \n}"
+                },
+                "url": "http://localhost:3000/users",
+                "description": "Traer todos los usuarios"
+            },
+            "response": []
+        },
+        {
+            "name": "All Users",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:3000/users",
+                "description": "traer todos los usuarios"
+            },
+            "response": []
+        }
+    ]
+}
